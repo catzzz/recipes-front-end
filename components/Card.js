@@ -1,15 +1,17 @@
-const Card = () => {
+const Card = ({image,name,creator, duration}) => {
+
+
   return (
     <div className="mt-8">
       {/* cards go here */}
       <div className="card">
-        <img src="/images/avacado-burger.jpeg" alt="avacado burger" className="w-full h-32 sm:h-48 object-cover"/>
+        <img src={image} alt={name} className="w-full h-32 sm:h-48 object-cover"/>
         <div className="m-4">
-          <span className="font-bold ">5 Bean Chilli Stew</span>
-          <span className="block text-gray-500">Recipe by Mario</span>
+          <span className="font-bold ">{name}</span>
+          <span className="block text-gray-500">Recipe by {creator}</span>
         </div>
         <div className="badge">
-            <span>25 mins</span>
+            <span>{duration} mins</span>
         </div>
       </div>
     </div>

@@ -26,11 +26,11 @@ export default function Home({recipes}) {
         <div >
           {/* section 1 */}
           
-          <CardList title={'Latest Posts'} />
+          <CardList title={'Latest Posts'} recipes={recipes}/>
 
           {/* section 2 */}
 
-          <CardList title={'Most Popular'} />
+          <CardList title={'Most Popular'} recipes={recipes}/>
 
 
           <div className="flex justify-center">
