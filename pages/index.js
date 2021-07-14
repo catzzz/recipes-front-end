@@ -14,10 +14,10 @@ export default function Home({ recipes }) {
   return (
     // content wrapper
     <div className="text-gray-500 font-body ">
-      <div className="grid md:grid-cols-3">
+      <div className="grid md:grid-cols-6">
         <Navbar isMenuOpen={isMenuOpen} toggleMenu={toggleMenu}/>
         {/* end nav */}
-        <main className="px-16 py-6 bg-gray-100 md:col-span-2">
+        <main className="px-16 py-6 bg-gray-100 md:col-span-5">
           <div className="flex justify-center md:justify-end">
             <Link href="#">
               <a className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-gray-100 transition ease-out duration-500">Log in</a>

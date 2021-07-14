@@ -28,9 +28,9 @@ const Navbar = ({isMenuOpen, toggleMenu}) => {
           </div>
         </div>
         <ul className={`text-sm mt-6 ${isMenuOpen ? 'block':'hidden'} md:block`}id="menu">
-          <li className="text-gray-700 font-bold py-1">
+          <li className="py-1 hover:text-gray-800">
             <Link href="#">
-              <a className="px-4 justify-end flex  border-r-4 border-primary" onClick={toggleMenu}>
+              <a className="px-4 justify-end flex  border-r-4 border-white hover:border-primary" onClick={toggleMenu}>
                 <span>Home</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -49,9 +49,9 @@ const Navbar = ({isMenuOpen, toggleMenu}) => {
               </a>
             </Link>
           </li>
-          <li className="py-1">
+          <li className="py-1 hover:text-gray-800">
             <Link href="#">
-              <a className="px-4 justify-end flex border-r-4 border-white" onClick={toggleMenu}>
+              <a className="px-4 justify-end flex border-r-4 border-white hover:border-primary" onClick={toggleMenu}>
                 <span>About</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -70,9 +70,9 @@ const Navbar = ({isMenuOpen, toggleMenu}) => {
               </a>
             </Link>
           </li>
-          <li className="py-1">
+          <li className="py-1 hover:text-gray-800">
             <Link href="#">
-              <a className="px-4 justify-end flex  border-r-4 border-white" onClick={toggleMenu}>
+              <a className="px-4 justify-end flex  border-r-4 border-white hover:border-primary" onClick={toggleMenu}>
                 <span>Contact</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
