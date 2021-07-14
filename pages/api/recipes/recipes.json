@@ -1,0 +1,40 @@
+{
+    "recipes":[
+        {
+            "id":"1",
+            "name":"Avacado Burger",
+            "tags":["avacado","burger"],
+            "coverImage":"/images/avacado-burger.jpeg",
+            "ingredients":["avacado","tamato","cheese","burger","salt","letture","mayo"],
+            "duration":"25",
+            "description":"Combine Worcestershire, salt and pepper and ground beef",
+            "creator":"Bee Chu",
+            "creatorImage":"/images/bee-chu.jpeg"
+            
+        },
+        {
+            "id":"2",
+            "name":"Avacado Salad",
+            "tags":["avacado","salad"],
+            "coverImage":"/images/avacado-salad.jpeg",
+            "ingredients":["avacado","tamato","cheese","nut","salt","letture","mayo"],
+            "duration":"25",
+            "description":"Combine Worcestershire, salt and pepper and ground beef",
+            "creator":"Bee Chu",
+            "creatorImage":"/images/bee-chu.jpeg"
+            
+        },
+        {
+            "id":"3",
+            "name":"Avacado Toast",
+            "tags":["avacado","toast"],
+            "coverImage":"/images/avacado-toast.jpeg",
+            "ingredients":["avacado","tamato","cheese","nut","salt","letture","mayo","toast"],
+            "duration":"25",
+            "description":"Combine Worcestershire, salt and pepper and ground beef",
+            "creator":"Bee Chu",
+            "creatorImage":"/images/bee-chu.jpeg"
+            
+        }
+    ]
+}

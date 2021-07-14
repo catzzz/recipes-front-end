@@ -3,7 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import CardList from '../components/CardList'
 import Navbar from '../components/Navbar'
-export default function Home() {
+import { API_URL } from '../config/index'
+export default function Home({recipes}) {
+
   return (
     // content wrapper
     <div className="text-gray-600 font-body">
@@ -41,4 +43,13 @@ export default function Home() {
    
     </div>
   )
+}
+
+
+export async function getStaticProps(){
+  const res = await fetch(`${API_URL}/api/recipes`)
+  const recipes = await res.json()
+  return {
+    props:{recipes}
+  }
 }
