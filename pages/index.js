@@ -14,10 +14,10 @@ export default function Home({ recipes }) {
         <main className="px-16 py-6 bg-gray-100 md:col-span-2">
           <div className="flex justify-center md:justify-end">
             <Link href="#">
-              <a className="text-primary">Log in</a>
+              <a className="btn text-primary border-primary md:border-2">Log in</a>
             </Link>
             <Link href="#">
-              <a className="text-primary ml-2">Sign up</a>
+              <a className="btn text-primary ml-2 border-primary md:border-2">Sign up</a>
             </Link>
           </div>
 
@@ -35,8 +35,8 @@ export default function Home({ recipes }) {
 
             <CardList title={"Most Popular"} recipes={recipes} />
 
-            <div className="flex justify-center">
-              <div className="bg-secondary-100 text-secondary-200">
+            <div className="flex justify-center mt-8">
+              <div className="btn bg-secondary-100 text-secondary-200">
                 Load more
               </div>
             </div>
