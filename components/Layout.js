@@ -24,8 +24,8 @@ export default function Layout({ title, children, keywords, description }) {
         <Navbar isMenuOpen={isMenuOpen} toggleMenu={toggleMenu}/>
      
         <main className="px-16 py-6 bg-gray-100 md:col-span-5">{children}</main>
- 
-      </div>
+     
+      </div>    
     </div>
   );
 }

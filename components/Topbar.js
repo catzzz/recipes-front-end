@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Topbar = () => {
   return (
-    <div className="flex justify-center md:justify-between pb-2 w-full">
+    <div className="flex justify-center md:justify-between pb-2 w-full mb-4">
       <Search />
       <Link href="#">
         <a className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-gray-100 transition ease-out duration-500">
