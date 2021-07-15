@@ -1,13 +1,16 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Navbar = ({isMenuOpen, toggleMenu}) => {
+  const router = useRouter()
+
   return (
     <div className="md:col-span-1 md:flex md:justify-end">
       <nav className="text-right">
         <div className="flex justify-between items-center">
           <h1 className="font-bold uppercase p-4 border-b border-gray-200">
             <Link href="/">
-              <a className="hover:text-gray-700">Bee&apos;s ecipes</a>
+              <a className="hover:text-gray-700">Bee&apos;s Recipes</a>
             </Link>
           </h1>
           <div className={`px-4 cursor-pointer md:hidden`} id="burger" onClick={toggleMenu}>
@@ -29,8 +32,8 @@ const Navbar = ({isMenuOpen, toggleMenu}) => {
         </div>
         <ul className={`text-sm mt-6 ${isMenuOpen ? 'block':'hidden'} md:block`}id="menu">
           <li className="py-1 hover:text-gray-800">
-            <Link href="#">
-              <a className="px-4 justify-end flex  border-r-4 border-white hover:border-primary" onClick={toggleMenu}>
+            <Link href="/">
+              <a className={`navlink ${router.asPath ==="/" ? "border-primary font-bold": "border-white"}`} onClick={toggleMenu}>
                 <span>Home</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -50,8 +53,8 @@ const Navbar = ({isMenuOpen, toggleMenu}) => {
             </Link>
           </li>
           <li className="py-1 hover:text-gray-800">
-            <Link href="#">
-              <a className="px-4 justify-end flex border-r-4 border-white hover:border-primary" onClick={toggleMenu}>
+            <Link href="/about">
+              <a className={`navlink ${router.asPath ==="/about" ? "border-primary font-bold": "border-white"}`} onClick={toggleMenu}>
                 <span>About</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -71,8 +74,8 @@ const Navbar = ({isMenuOpen, toggleMenu}) => {
             </Link>
           </li>
           <li className="py-1 hover:text-gray-800">
-            <Link href="#">
-              <a className="px-4 justify-end flex  border-r-4 border-white hover:border-primary" onClick={toggleMenu}>
+            <Link href="/contact">
+              <a className={`navlink ${router.asPath ==="/contact" ? "border-primary font-bold": "border-white"}`} onClick={toggleMenu}>
                 <span>Contact</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

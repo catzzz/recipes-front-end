@@ -4,25 +4,16 @@ import Link from "next/link";
 import CardList from "../components/CardList";
 import Layout from "@/components/Layout";
 import { API_URL } from "../config/index";
-import { useState } from "react";
+
+import Topbar from "@/components/Topbar";
 export default function Home({ recipes }) {
   return (
     // content wrapper
     <Layout>
-      <div className="flex justify-center md:justify-end">
-        <Link href="#">
-          <a className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-gray-100 transition ease-out duration-500">
-            Log in
-          </a>
-        </Link>
-        <Link href="#">
-          <a className="btn text-primary ml-2 border-primary md:border-2 hover:text-gray-100 hover:bg-primary transition ease-out duration-500">
-            Sign up
-          </a>
-        </Link>
-      </div>
+      <Topbar />
 
       <header>
+        
         <h2 className="text-gray-700 text-6xl font-semibold ">Recipes</h2>
         <h3 className="text=2xl font-semibold  ">For Bee Chu</h3>
       </header>
