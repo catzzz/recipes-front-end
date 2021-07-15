@@ -4,13 +4,14 @@ const AboutPage = () => {
   return (
     <Layout>
       <div className="grid grid-cols-2 mt-6">
-        <div className="cols-span-1 flex items-start ">
+        <h1 className="col-span-2 flex justify-center py-2 text-4xl font-semibold mb-8 text-gray-700">More About Me</h1>
+        <div className="col-span-1 flex items-start ">
           <div>
             <img src="/images/bee-chu.jpeg" alt="bee's photo" className="rounded-md shadow"/>
           </div>
           <div></div>
         </div>
-        <div className="cols-span-1">
+        <div className="col-span-1">
           <h1 className="uppercase font-semibold text-gray-800 text-4xl text-center mb-4">Bee Chu</h1>
           <p>
             Hey Mamas! I’m Lauren, and I have lived in the Bay Area for about 6
